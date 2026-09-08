@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Which Global Fintech Fest Animal Are You? — GFF 2026</title>
+<meta name="description" content="28 species roam Jio World Centre this week. Ten taps. One verdict you didn't ask for. Find your Global Fintech Fest animal.">
+<link rel="canonical" href="https://gffspecies.in/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gffspecies.in/">
+<meta property="og:title" content="Which Global Fintech Fest animal are you?">
+<meta property="og:description" content="28 species roam Jio World Centre this week. Ten taps. One verdict you didn't ask for.">
+<meta property="og:image" content="https://gffspecies.in/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Field Guide to the Fintech Ecosystem">
+
+<!-- Twitter/X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Which Global Fintech Fest animal are you?">
+<meta name="twitter:description" content="28 species roam Jio World Centre this week. Ten taps. One verdict you didn't ask for.">
+<meta name="twitter:image" content="https://gffspecies.in/og-image.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEL214PX0G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FEL214PX0G');
+</script>
+<style>
+:root{
+  --ground:#13241E;
+  --ground-2:#1B3128;
+  --ground-3:#0D1915;
+  --plate:#F0E9D8;
+  --plate-2:#E4DCC6;
+  --ink:#16211C;
+  --ink-soft:#5F6F66;
+  --rule:#C3B99D;
+  --marigold:#E8A33D;
+  --vermilion:#BE4227;
+  --moss:#5C7A5E;
+  --sans:'Instrument Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --serif:'Fraunces',Georgia,serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background-color:var(--ground);
+  background-image:
+    radial-gradient(1.3px 1.3px at 0 0, rgba(240,233,216,.055) 1px, transparent 1.4px),
+    radial-gradient(ellipse 820px 560px at 8% -10%, rgba(92,122,94,.34), transparent 58%),
+    radial-gradient(ellipse 680px 480px at 112% 22%, rgba(232,163,61,.11), transparent 55%),
+    radial-gradient(ellipse 900px 660px at 46% 118%, rgba(190,66,39,.09), transparent 60%);
+  background-repeat:repeat,no-repeat,no-repeat,no-repeat;
+  background-size:27px 27px,auto,auto,auto;
+  font-family:var(--sans);
+  color:var(--plate);
+  min-height:100dvh;
+  overflow-x:hidden;
+}
+.app{
+  max-width:430px;margin:0 auto;min-height:100dvh;position:relative;
+  padding:0 20px calc(28px + env(safe-area-inset-bottom));
+  padding-top:calc(16px + env(safe-area-inset-top));
+}
+.screen{display:none}
+.screen.on{display:block}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:2px solid var(--marigold);outline-offset:3px;border-radius:4px}
+
+/* ---------- shared bits ---------- */
+.hair{height:1px;background:rgba(240,233,216,.18);margin:18px 0}
+.catno{font-size:10.5px;letter-spacing:.14em;color:rgba(240,233,216,.45);font-variant-numeric:tabular-nums}
+.catno-ink{color:var(--ink-soft)}
+.btn{
+  display:block;width:100%;padding:17px 20px;border-radius:2px;
+  background:var(--marigold);color:#20180A;font-weight:700;font-size:16.5px;
+  letter-spacing:-.01em;transition:transform .12s ease;
+}
+.btn:active{transform:scale(.985)}
+.btn-ghost{background:none;border:1px solid rgba(240,233,216,.3);color:var(--plate);font-weight:500}
+.btn-ink{background:var(--ink);color:var(--plate)}
+.linkish{font-size:14px;color:rgba(240,233,216,.55);text-decoration:underline;text-underline-offset:3px;padding:10px;display:block;width:100%;text-align:center}
+
+/* ---------- cover ---------- */
+.cover{padding-top:6vh}
+.frame{
+  border:1px solid rgba(240,233,216,.28);
+  border-radius:2px;padding:26px 22px 22px;position:relative;
+  background:linear-gradient(180deg,rgba(240,233,216,.05),transparent 60%);
+}
+.frame::before{
+  content:"";position:absolute;inset:6px;border:1px solid rgba(240,233,216,.13);
+  border-radius:1px;pointer-events:none;
+}
+.window{
+  height:132px;display:flex;align-items:center;justify-content:center;
+  border-bottom:1px solid rgba(240,233,216,.2);margin-bottom:20px;
+}
+.window span{font-size:76px;line-height:1;display:block}
+.reduce .window span{animation:none!important}
+.spin{animation:swap .9s steps(1,end) infinite}
+@keyframes swap{0%,100%{opacity:1}49%{opacity:1}50%{opacity:.999}}
+.cover h1{
+  font-family:var(--serif);font-weight:600;font-size:40px;line-height:.98;
+  margin:0 0 12px;letter-spacing:-.02em;font-variation-settings:'SOFT' 60,'WONK' 1;
+}
+.cover h1 em{font-style:italic;font-weight:400}
+.cover p{font-size:15px;line-height:1.55;color:rgba(240,233,216,.7);margin:0 0 22px;max-width:34ch}
+.tally{display:flex;gap:14px;align-items:baseline;margin:22px 0 8px}
+.tally b{font-family:var(--serif);font-size:30px;font-weight:600;font-variant-numeric:tabular-nums}
+.tally span{font-size:12.5px;color:rgba(240,233,216,.55);line-height:1.4}
+
+/* ---------- name ---------- */
+.q-eyebrow{font-size:12.5px;letter-spacing:.1em;color:var(--marigold);margin:0 0 14px}
+.h-ask{font-family:var(--serif);font-size:29px;line-height:1.12;font-weight:500;margin:0 0 8px;letter-spacing:-.015em;font-variation-settings:'SOFT' 50}
+.sub-ask{font-size:14.5px;color:rgba(240,233,216,.6);line-height:1.5;margin:0 0 26px}
+.field{
+  width:100%;padding:16px 4px;background:none;border:0;border-bottom:1.5px solid rgba(240,233,216,.35);
+  color:var(--plate);font-family:var(--serif);font-size:26px;font-weight:500;
+}
+.field::placeholder{color:rgba(240,233,216,.28)}
+.field:focus{outline:none;border-bottom-color:var(--marigold)}
+
+/* ---------- quiz ---------- */
+.qbar{display:flex;gap:4px;margin:4px 0 26px}
+.qslot{flex:1;height:3px;background:rgba(240,233,216,.16)}
+.qslot.done{background:var(--marigold)}
+.qslot.now{background:rgba(232,163,61,.5)}
+.qnum{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px}
+.qtext{
+  font-family:var(--serif);font-size:26px;line-height:1.18;font-weight:500;
+  margin:0 0 24px;letter-spacing:-.015em;font-variation-settings:'SOFT' 50
+}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{
+  text-align:left;padding:15px 16px;border:1px solid rgba(240,233,216,.2);
+  border-radius:2px;font-size:15.5px;line-height:1.35;color:var(--plate);
+  transition:background .14s ease,border-color .14s ease,transform .1s ease;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.opt:active{transform:scale(.99)}
+.opt.picked{background:var(--marigold);border-color:var(--marigold);color:#20180A;font-weight:600}
+.opt i{font-style:normal;opacity:.5;font-size:13px;padding-top:2px;min-width:12px}
+.opt.picked i{opacity:.65}
+.qback{margin-top:22px;font-size:13.5px;color:rgba(240,233,216,.45);padding:8px 0}
+
+/* ---------- classifying ---------- */
+.classify{height:70dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.classify .big{font-size:70px;line-height:1;margin-bottom:26px}
+.classify p{font-family:var(--serif);font-size:20px;font-weight:400;font-style:italic;color:rgba(240,233,216,.75);margin:0}
+
+/* ---------- result plate ---------- */
+.plate{
+  background:var(--plate);color:var(--ink);border-radius:3px;position:relative;
+  padding:26px 22px 24px;
+  background-image:radial-gradient(rgba(22,33,28,.045) .6px,transparent .6px);
+  background-size:9px 9px;
+  box-shadow:0 18px 44px rgba(0,0,0,.45);
+}
+.plate::before{content:"";position:absolute;inset:8px;border:1px solid var(--rule);border-radius:1px;pointer-events:none}
+.plate-in{position:relative;z-index:1}
+.plate-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
+.stamp{
+  border:1.5px solid var(--vermilion);color:var(--vermilion);border-radius:2px;
+  padding:5px 8px;text-align:center;transform:rotate(2.5deg);
+  animation:stampIn .5s cubic-bezier(.2,.7,.2,1) .12s both;
+}
+.stamp b{display:block;font-family:var(--serif);font-size:17px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.stamp span{display:block;font-size:8.5px;letter-spacing:.09em;margin-top:2px}
+.glyph{font-size:74px;line-height:1;text-align:center;margin:6px 0 4px;animation:glyphIn .45s cubic-bezier(.2,.7,.2,1) .04s both}
+.aname{
+  font-family:var(--serif);font-size:38px;font-weight:700;text-align:center;
+  margin:0;line-height:1;letter-spacing:-.025em;font-variation-settings:'SOFT' 40,'WONK' 1;
+  animation:riseIn .4s ease .22s both;
+}
+.alatin{font-family:var(--serif);font-style:italic;font-size:14.5px;text-align:center;color:var(--ink-soft);margin:6px 0 0}
+.atag{
+  font-family:var(--serif);font-size:19px;line-height:1.3;text-align:center;
+  font-style:italic;margin:16px 0 0;color:var(--ink);
+  animation:riseIn .4s ease .32s both;
+}
+@keyframes stampIn{0%{opacity:0;transform:rotate(2.5deg) scale(1.55)}60%{opacity:1;transform:rotate(2.5deg) scale(.94)}100%{opacity:1;transform:rotate(2.5deg) scale(1)}}
+@keyframes glyphIn{0%{opacity:0;transform:scale(.72)}100%{opacity:1;transform:scale(1)}}
+@keyframes riseIn{0%{opacity:0;transform:translateY(7px)}100%{opacity:1;transform:translateY(0)}}
+.reduce .stamp,.reduce .glyph,.reduce .aname,.reduce .atag{animation:none}
+.prule{height:1px;background:var(--rule);margin:20px 0}
+.plabel{font-size:11.5px;letter-spacing:.1em;color:var(--ink-soft);margin:0 0 10px}
+.leave{margin:0;padding:0;list-style:none}
+.leave li{
+  display:flex;gap:11px;font-size:14.5px;line-height:1.45;padding:6px 0;
+  border-bottom:1px dotted rgba(22,33,28,.16);
+}
+.leave li:last-child{border-bottom:0}
+.leave b{font-family:var(--serif);font-weight:700;font-variant-numeric:tabular-nums;min-width:24px}
+.stat{margin-bottom:11px}
+.stat-h{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}
+.stat-h b{font-variant-numeric:tabular-nums;font-weight:600}
+.track{height:7px;background:rgba(22,33,28,.11);border-radius:1px;overflow:hidden}
+.fill{height:100%;background:var(--ink);width:0;transition:width .9s cubic-bezier(.2,.7,.2,1)}
+.fill.hot{background:var(--vermilion)}
+.reduce .fill{transition:none}
+.note{font-size:14.5px;line-height:1.5;margin:0 0 4px}
+.note b{font-weight:600}
+.quote{
+  font-family:var(--serif);font-size:22px;font-style:italic;line-height:1.25;
+  text-align:center;margin:4px 0;letter-spacing:-.01em;
+}
+.pair{
+  background:var(--ink);color:var(--plate);border-radius:2px;padding:16px;
+  margin-top:18px;display:flex;gap:14px;align-items:center;
+}
+.pair .pg{font-size:34px;line-height:1}
+.pair p{margin:0;font-size:14px;line-height:1.45;color:rgba(240,233,216,.75)}
+.pair p b{color:var(--plate);font-weight:600}
+.footmark{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.footmark span{font-size:10.5px;letter-spacing:.12em;color:var(--ink-soft)}
+
+/* ---------- share ---------- */
+.sharewrap{margin-top:22px}
+.shead{font-family:var(--serif);font-size:24px;font-weight:600;margin:0 0 6px;letter-spacing:-.015em}
+.ssub{font-size:14px;color:rgba(240,233,216,.6);margin:0 0 16px;line-height:1.5}
+.preview{
+  border:1px solid rgba(240,233,216,.22);border-radius:3px;overflow:hidden;margin-bottom:18px;
+  background:rgba(240,233,216,.05);
+}
+.preview-img{height:96px;display:flex;align-items:center;justify-content:center;font-size:46px;background:var(--ground-2)}
+.preview-tx{padding:12px 14px}
+.preview-tx b{display:block;font-size:14.5px;margin-bottom:3px}
+.preview-tx span{display:block;font-size:12.5px;color:rgba(240,233,216,.55);line-height:1.4}
+.preview-url{font-size:10.5px;letter-spacing:.06em;color:rgba(240,233,216,.35);margin-top:7px}
+.srow{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px}
+.sbtn{
+  padding:15px 12px;border-radius:2px;font-size:14.5px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.s-wa{background:#25D366;color:#06301A}
+.s-li{background:#0A66C2;color:#fff}
+.s-x{background:var(--plate);color:var(--ink)}
+.s-cp{background:none;border:1px solid rgba(240,233,216,.3);color:var(--plate)}
+
+.nudge p{font-size:14.5px;line-height:1.5;color:var(--ink-soft);margin:0 0 12px;text-align:center}
+.sbtn.wide{width:100%}
+
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+.gcell{
+  aspect-ratio:1;border:1px solid rgba(240,233,216,.16);border-radius:2px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  padding:4px;transition:border-color .14s ease,background .14s ease;
+}
+.gcell.me{border-color:var(--marigold);background:rgba(232,163,61,.12)}
+.gcell span{font-size:24px;line-height:1}
+.gcell small{font-size:8.5px;color:rgba(240,233,216,.5);text-align:center;line-height:1.1}
+.gdetail{
+  border-left:2px solid var(--marigold);padding:12px 0 12px 14px;margin-top:20px;min-height:74px;
+}
+.gdetail h4{font-family:var(--serif);font-size:19px;margin:0 0 4px;font-weight:600}
+.gdetail i{font-size:13px;color:rgba(240,233,216,.5);display:block;margin-bottom:6px}
+.gdetail p{font-size:14px;line-height:1.45;color:rgba(240,233,216,.75);margin:0}
+
+.toast{
+  position:fixed;left:50%;bottom:28px;transform:translateX(-50%);
+  background:var(--plate);color:var(--ink);padding:12px 20px;border-radius:2px;
+  font-size:14px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:40;
+}
+.toast.on{opacity:1}
+.fade{animation:fade .3s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.reduce .fade{animation:none}
+@media (prefers-reduced-motion:reduce){
+  .fade{animation:none}
+  .fill{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- COVER -->
+  <section class="screen on cover" id="s-cover">
+    <div class="frame">
+      <div class="window"><span id="cover-glyph">🦊</span></div>
+      <p class="q-eyebrow" style="margin-bottom:10px">GFF 2026 · MUMBAI</p>
+      <h1>Which <em>Global Fintech Fest</em> animal are you?</h1>
+      <p>Twenty-eight species roam Jio World Centre this week. Ten taps. One verdict you didn't ask for.</p>
+      <div class="tally">
+        <b id="tally-n">41,208</b>
+        <span>specimens<br>classified so far</span>
+      </div>
+    </div>
+    <div style="margin-top:22px"><button class="btn" id="go-start">Find out what you are</button></div>
+    <button class="linkish" id="go-gal-1">Browse all 28 species</button>
+    <div class="hair"></div>
+    <div class="catno">GFF 2026 · JIO WORLD CENTRE, BKC · 9–11 SEPT · UNOFFICIAL</div>
+  </section>
+
+  <!-- NAME -->
+  <section class="screen" id="s-name">
+    <p class="q-eyebrow">Before we begin</p>
+    <h2 class="h-ask">Whose name goes on the plate?</h2>
+    <p class="sub-ask">It appears on your specimen card, and in the link preview when you share it. First name is plenty.</p>
+    <input class="field" id="name-in" placeholder="Shivangi" autocomplete="given-name" maxlength="18">
+    <div style="margin-top:34px"><button class="btn" id="go-q">Start the survey</button></div>
+    <button class="linkish" id="skip-name">Keep me anonymous</button>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen" id="s-quiz">
+    <div class="qbar" id="qbar"></div>
+    <div class="qnum">
+      <span class="catno" id="q-count">QUESTION 1 OF 10</span>
+      <span class="catno" id="q-field">HABITAT</span>
+    </div>
+    <h2 class="qtext" id="q-text"></h2>
+    <div class="opts" id="q-opts"></div>
+    <button class="qback" id="q-back">← Previous question</button>
+  </section>
+
+  <!-- CLASSIFYING -->
+  <section class="screen" id="s-load">
+    <div class="classify">
+      <div class="big" id="load-glyph">🐙</div>
+      <p id="load-txt">Cross-referencing the register…</p>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="screen" id="s-result"></section>
+
+  <!-- GALLERY -->
+  <section class="screen" id="s-gal">
+    <p class="q-eyebrow">The register</p>
+    <h2 class="h-ask">All 28 species</h2>
+    <p class="sub-ask">Observed at Jio World Centre between 2020 and 2026. Tap any specimen.</p>
+    <div class="gal" id="gal-grid"></div>
+    <div class="gdetail" id="gal-detail">
+      <h4>Pick a specimen</h4>
+      <i>—</i>
+      <p>Tap a species above to read its field notes.</p>
+    </div>
+    <div style="margin-top:24px"><button class="btn btn-ghost" id="gal-back">Back</button></div>
+  </section>
+
+</div>
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+/* ============================================================
+   THE REGISTER — 28 species
+   traits: [hustle, ship, vision, rigour, spotlight] 0-100
+   ============================================================ */
+const ANIMALS = {
+  lion:{g:"🦁",n:"Lion",lat:"Panthera fundatrix",r:5,tag:"You did not come to attend. You came to be recognised.",
+    leave:["3 investors who said “send me the deck”, none of whom will open it","1 rival founder you were suspiciously warm to","9 people who now work for you, only in their heads","1 term sheet you're already mentally spending"],
+    hab:"Main stage → green room → the one dinner that mattered",
+    weak:"You have never once been the second-most confident person in a room.",pair:"ant"},
+  fox:{g:"🦊",n:"Fox",lat:"Vulpes strategica",r:4,tag:"You watched the regulator's face, not the slide.",
+    leave:["2 things nobody else in the hall noticed","1 competitor's roadmap, reverse-engineered from a booth demo","1 hunch about what the next RBI circular actually says","0 selfies"],
+    hab:"Third row from the back, angled toward the exit",
+    weak:"You see the angle so clearly you forget to tell anyone.",pair:"beaver"},
+  wolf:{g:"🐺",n:"Wolf",lat:"Canis persequens",r:6,tag:"You will follow up. On a Sunday. Twice.",
+    leave:["61 LinkedIn requests, all with a note","3 meetings booked before the panel ended","1 person who is now hiding near the coffee","0 unread messages, ever"],
+    hab:"Wherever two people are standing slightly apart",
+    weak:"You cannot tell the difference between “no” and “not yet”.",pair:"owl"},
+  eagle:{g:"🦅",n:"Eagle",lat:"Aquila transfrontalis",r:4,tag:"Your slide has a world map on it, and the map has arrows.",
+    leave:["2 cross-border corridors that don't exist yet","1 UAE meeting, 1 Singapore meeting","4 mentions of “rails” before lunch","1 timezone you now live in"],
+    hab:"The international pavilion, then a 6am call with London",
+    weak:"You are extremely clear on the vision and vague on the settlement leg.",pair:"rhino"},
+  elephant:{g:"🐘",n:"Elephant",lat:"Elephas institutionis",r:5,tag:"You have seen four hype cycles. You brought a cardigan.",
+    leave:["2 fintechs who want your distribution","1 memory of when this was all a paper mandate, before Jan Dhan changed the maths","3 startups you'll politely outlast","1 board note nobody will read"],
+    hab:"Reserved seating, then away by 4pm",
+    weak:"Being right in 2016 has made you slow in 2026.",pair:"cheetah"},
+  tiger:{g:"🐯",n:"Tiger",lat:"Panthera crescendi",r:5,tag:"Every conversation is a funnel and you are already at the bottom of it.",
+    leave:["4 partnerships priced in your head before lunch","1 growth number you shouldn't have said out loud","6 people asking if your CAC survives a cashback war","0 hours of sleep"],
+    hab:"Booth, booth, booth, after-party",
+    weak:"You'd rather grow it than fix it.",pair:"crow"},
+  owl:{g:"🦉",n:"Owl",lat:"Bubo commentarius",r:4,tag:"You read the actual circular. All 40 pages. Twice.",
+    leave:["1 genuinely new idea about the RBI sandbox, unread by anyone else","2 people who found you unexpectedly interesting","1 half-written thread you'll never post","3 sessions attended front to back, notes and all"],
+    hab:"Policy track, back row, taking notes by hand",
+    weak:"Nobody has ever asked you a question at the volume you'd like.",pair:"peacock"},
+  cheetah:{g:"🐆",n:"Cheetah",lat:"Acinonyx sprintus",r:5,tag:"You shipped something from the shuttle bus.",
+    leave:["1 feature built during a keynote","2 bugs also built during a keynote","3 ideas you started and 1 you finished","1 phone at 4%"],
+    hab:"Any surface with a plug point",
+    weak:"Speed is your whole personality and your entire technical debt.",pair:"tortoise"},
+  octopus:{g:"🐙",n:"Octopus",lat:"Octopus omnipresens",r:3,tag:"Somehow, you are involved in all of it.",
+    leave:["7 new WhatsApp groups","14 people who think you work with them","3 partnerships and 2 introductions","1 idea you will absolutely never build"],
+    hab:"Panel → coffee → booth → different panel → coffee again",
+    weak:"47 open opportunities. Zero calendar.",pair:"ant"},
+  peacock:{g:"🦚",n:"Peacock",lat:"Pavo linkedinensis",r:6,tag:"You were posting about day one before day one happened.",
+    leave:["4 carousels, 1 reel, 1 “humbled and grateful”","1,400 impressions and a slightly sore thumb","2 photos from someone's afterparty, names already forgotten","1 comment section you're still monitoring"],
+    hab:"Good lighting. Always good lighting.",
+    weak:"You experience the event mainly in edit mode.",pair:"crow"},
+  parrot:{g:"🦜",n:"Parrot",lat:"Psittacus verbosus",r:5,tag:"You have said “agentic” eleven times and defined it zero.",
+    leave:["9 phrases absorbed from the main stage","1 opinion, formed at 11am, held with total conviction","4 nods of agreement you didn't understand","1 confident sentence about the AA framework you can't actually explain"],
+    hab:"Wherever the loudest panel just ended",
+    weak:"Someone will eventually ask a follow-up question.",pair:"owl"},
+  snake:{g:"🐍",n:"Snake",lat:"Serpens negotiator",r:4,tag:"You never speak first, and you always speak last.",
+    leave:["2 term sheets, neither of them yours","1 price you got by saying nothing for 8 seconds","3 people convinced it was their idea","0 tells"],
+    hab:"Corner table, back to the wall",
+    weak:"You win the negotiation and lose the relationship.",pair:"penguin"},
+  bee:{g:"🐝",n:"Bee",lat:"Apis conjungens",r:5,tag:"You don't do the deals. You are the reason the deals happen.",
+    leave:["11 introductions made, 2 that will actually work","1 group chat you now moderate","4 people who owe you one","0 credit"],
+    hab:"The gap between two booths, connecting them",
+    weak:"Everyone's network runs through you and nobody's P&L does.",pair:"lion"},
+  beaver:{g:"🦫",n:"Beaver",lat:"Castor aedificans",r:4,tag:"While the panel debated it, you had already built it.",
+    leave:["1 working prototype nobody asked for","2 conversations about latency","1 firm view on why the UPI callback API is badly documented","3 sessions skipped for good reason"],
+    hab:"Hackathon corner, headphones on",
+    weak:"You built the thing. You did not tell one single person.",pair:"peacock"},
+  monkey:{g:"🐒",n:"Monkey",lat:"Simia experimentalis",r:4,tag:"You are here to see what breaks.",
+    leave:["3 experiments, 2 disasters, 1 unreasonably good outcome","1 booth demo you definitely broke","4 people who don't know if you're joking","1 great story"],
+    hab:"The demo zone, doing the thing they said not to do",
+    weak:"Chaos is a strategy right up until it isn't.",pair:"tortoise"},
+  tortoise:{g:"🐢",n:"Tortoise",lat:"Testudo perseverans",r:4,tag:"Eleven years in. You have outlived every trend on that stage.",
+    leave:["1 relationship worth more than everyone else's forty","2 startups you watched get born and buried","1 slow, boring, extremely profitable line of business","0 urgency"],
+    hab:"Same seat, same time, every year since 2021",
+    weak:"You are so patient that windows close while you consider them.",pair:"cheetah"},
+  shark:{g:"🦈",n:"Shark",lat:"Carcharodon capitalis",r:4,tag:"You are not networking. You are sourcing.",
+    leave:["31 pitches, 2 you'll remember","1 founder you'll call at 10pm","4 “love it, keep me posted”s deployed","0 term sheets, obviously"],
+    hab:"Investor lounge, then the startup stage, then gone",
+    weak:"You have said “interesting space” so often it means nothing now.",pair:"unicorn"},
+  rhino:{g:"🦏",n:"Rhino",lat:"Rhinoceros complianticus",r:3,tag:"Everyone finds you difficult until the day you save them.",
+    leave:["2 products you quietly stopped after actually reading the NPCI guidelines","1 clause everyone else missed","3 people avoiding eye contact","1 email that begins “As per the circular…”"],
+    hab:"The regulation track, front row, arms folded",
+    weak:"You are always right and never invited to the fun bit.",pair:"monkey"},
+  whale:{g:"🐳",n:"Whale",lat:"Balaena allocatrix",r:3,tag:"You move slowly, and the entire ocean moves with you.",
+    leave:["2 people who rearranged their week for a 12-minute slot","1 number that changes someone's year","4 requests you'll route to a junior","0 booths visited"],
+    hab:"A closed room you were escorted to",
+    weak:"You have not spoken to an actual customer since 2019.",pair:"bee"},
+  penguin:{g:"🐧",n:"Penguin",lat:"Pygoscelis collegialis",r:5,tag:"You came with the team and you will leave with the team.",
+    leave:["1 team photo that will be the banner for a year","3 juniors you introduced to someone senior","2 colleagues you covered for","0 solo dinners"],
+    hab:"Wherever the group is. Always with the group.",
+    weak:"You give away credit so instinctively that nobody can find yours.",pair:"snake"},
+  chameleon:{g:"🦎",n:"Chameleon",lat:"Chamaeleo consultans",r:5,tag:"You have a slightly different opinion in every room, and all of them are correct.",
+    leave:["4 industries you now claim expertise in","1 framework with three boxes and an arrow, relabelled for embedded finance this time","2 clients who think you're one of them","1 deck reused for the fourth time"],
+    hab:"Every track, briefly, at the same level of confidence",
+    weak:"You can speak to anyone and belong to nobody.",pair:"beaver"},
+  unicorn:{g:"🦄",n:"Unicorn",lat:"Equus valuationis",r:3,tag:"You are not building a company. You are building a category.",
+    leave:["1 TAM slide that made a grown investor laugh","3 believers, 12 skeptics","1 valuation you say casually and think about hourly","0 revenue questions answered"],
+    hab:"The startup stage, then the party, then the party after",
+    weak:"Someone has, in fact, done this before.",pair:"crow"},
+  ant:{g:"🐜",n:"Ant",lat:"Formica operationis",r:5,tag:"The event runs. Nobody knows it's because of you.",
+    leave:["1 crisis resolved from the queue for chai","4 people fed, badged and seated","2 escalations closed on mute","0 sessions actually watched"],
+    hab:"Standing at the back, on the phone, fixing something",
+    weak:"You are load-bearing and completely invisible.",pair:"octopus"},
+  butterfly:{g:"🦋",n:"Butterfly",lat:"Papilio explorator",r:5,tag:"You are here to find out what happens next to you.",
+    leave:["3 companies you could see yourself at","1 conversation that genuinely rearranged something","6 open browser tabs of job pages","1 half-decision"],
+    hab:"Everywhere, lightly, for about eleven minutes each",
+    weak:"You have kept every door open and walked through none.",pair:"tortoise"},
+  sloth:{g:"🦥",n:"Sloth",lat:"Bradypus gratuitus",r:6,tag:"Let's be honest. You came for the tote bag.",
+    leave:["4 tote bags, 9 pens, 1 branded power bank","2 full meals and a suspicious number of cookies","1 session attended, mostly for the air conditioning","0 regrets"],
+    hab:"Booth with the best giveaway, then the food court",
+    weak:"You will be asked what you learned and you will have to improvise.",pair:"wolf"},
+  duck:{g:"🦆",n:"Duck",lat:"Anas serenus",r:4,tag:"Perfectly calm on the surface. Absolute carnage underneath.",
+    leave:["1 flawless panel appearance","19 fires put out between sessions","3 people who think you have it all together","1 nap taken sitting upright"],
+    hab:"On stage, then in a corridor, whispering urgently",
+    weak:"Nobody knows how much you're carrying, because you've never said.",pair:"penguin"},
+  crow:{g:"🐦‍⬛",n:"Crow",lat:"Corvus scepticus",r:4,tag:"You asked about unit economics and the room went quiet.",
+    leave:["2 punctured pitches, both about how the cashback maths eventually works out","1 question the panel deflected","3 people who agree with you privately","0 people who agree with you publicly"],
+    hab:"Q&A microphone, second question",
+    weak:"You're right often enough that people have stopped asking you.",pair:"unicorn"},
+  flamingo:{g:"🦩",n:"Flamingo",lat:"Phoenicopterus brandicus",r:4,tag:"You didn't build the product. You made people want to stand near it.",
+    leave:["1 queue, for a booth, because you designed it that way","6 photos of your own signage, saved to camera roll","4 agencies pitching a rebrand you didn't ask for","1 unprompted opinion on kerning"],
+    hab:"The exhibition floor, adjusting something",
+    weak:"You made the ugly product beautiful and now nobody fixes the product.",pair:"beaver"}
+};
+</script>
+<script>
+/* ============================================================
+   THE SURVEY — 10 questions
+   a: animal weights   t: [hustle, ship, vision, rigour, spotlight]
+   ============================================================ */
+const Q = [
+{f:"ARRIVAL",q:"9:40am, Jio World Centre. What is your actual first move?",o:[
+ {x:"Main stage. I want the keynote seat.",a:{eagle:2,elephant:2,owl:1},t:[0,0,2,1,1]},
+ {x:"Find the founders before they get busy.",a:{lion:2,wolf:2,unicorn:1},t:[2,0,1,0,1]},
+ {x:"Locate the investor lounge.",a:{shark:3,whale:2,snake:1},t:[2,0,1,0,0]},
+ {x:"Coffee. Obviously coffee.",a:{sloth:2,duck:1,butterfly:1},t:[0,0,0,0,0]},
+ {x:"Walk the whole exhibition floor once, fast.",a:{octopus:2,bee:2,flamingo:1,butterfly:1},t:[2,1,0,0,0]},
+ {x:"Check which of my meetings already cancelled.",a:{ant:2,duck:2,chameleon:1},t:[1,2,0,1,0]}]},
+
+{f:"REFLEX",q:"Someone on stage says agentic AI will transform finance.",o:[
+ {x:"Finally. Someone said it out loud.",a:{unicorn:2,parrot:2,eagle:1},t:[0,0,3,0,1]},
+ {x:"Show me one thing in production.",a:{crow:3,tiger:1,beaver:1},t:[0,2,0,2,0]},
+ {x:"And who is liable when it goes wrong?",a:{rhino:2,owl:1,tortoise:1},t:[0,0,0,4,0]},
+ {x:"I have heard this eleven times since Tuesday.",a:{sloth:2,chameleon:2,crow:2,parrot:1},t:[0,0,0,1,0]},
+ {x:"Fine. Can we ship it by Q1?",a:{beaver:2,cheetah:2,ant:1,monkey:1},t:[0,4,0,0,0]}]},
+
+{f:"OBJECTIVE",q:"Your honest goal for the three days.",o:[
+ {x:"Raise money.",a:{lion:3,unicorn:2},t:[3,0,2,0,2]},
+ {x:"Close a partnership.",a:{bee:2,tiger:2,snake:2},t:[3,1,0,1,0]},
+ {x:"Meet one person who changes something.",a:{butterfly:3,fox:2,penguin:2},t:[1,0,1,0,0]},
+ {x:"Learn something I did not already know.",a:{owl:3,tortoise:2},t:[0,0,1,2,0]},
+ {x:"Be seen.",a:{peacock:3,flamingo:2,lion:1},t:[1,0,0,0,4]},
+ {x:"Survive it.",a:{duck:2,ant:2,sloth:1},t:[0,2,0,1,0]}]},
+
+{f:"INSTINCT",q:"Which sentence sounds most like you?",o:[
+ {x:"Let's build it.",a:{beaver:2,cheetah:2},t:[0,4,1,0,0]},
+ {x:"Let's scale it.",a:{tiger:3,wolf:2},t:[3,2,1,0,1]},
+ {x:"Let's check whether it's allowed.",a:{rhino:2,elephant:2},t:[0,0,0,4,0]},
+ {x:"Let's fund it.",a:{shark:3,whale:2},t:[2,0,2,1,0]},
+ {x:"Let's rethink the whole thing.",a:{unicorn:1,monkey:3,fox:2},t:[0,0,4,0,1]},
+ {x:"Let's make it look extraordinary.",a:{flamingo:3,peacock:2,chameleon:1,monkey:1},t:[1,1,1,0,3]}]},
+
+{f:"RAILS",q:"Your actual relationship with UPI.",o:[
+ {x:"I build on it.",a:{beaver:2,cheetah:3,tiger:1,monkey:1},t:[0,3,1,0,0]},
+ {x:"I compete with it.",a:{lion:2,unicorn:2,snake:1},t:[2,1,3,0,1]},
+ {x:"I regulate it, or I answer to whoever does.",a:{rhino:2,elephant:2,tortoise:1},t:[0,1,0,4,0]},
+ {x:"I invest around it.",a:{shark:2,whale:2,fox:1},t:[2,0,2,1,0]},
+ {x:"I explain it to foreigners for a living.",a:{eagle:3,chameleon:2,parrot:1},t:[2,0,2,0,2]},
+ {x:"I use it for chai. That is the whole relationship.",a:{sloth:2,butterfly:2},t:[0,0,0,0,0]}]},
+
+{f:"CONTACT",q:"Thirty minutes in the networking lounge.",o:[
+ {x:"Ten conversations that actually go somewhere.",a:{bee:3,wolf:1,octopus:2,penguin:2},t:[4,0,0,0,1]},
+ {x:"Thirty connection requests, each with a note.",a:{peacock:2,wolf:3},t:[4,1,0,0,2]},
+ {x:"Find the one person I came here for.",a:{fox:2,snake:2,whale:2},t:[2,0,1,1,0]},
+ {x:"Find a wall, answer emails.",a:{duck:2,ant:2,owl:1},t:[0,3,0,1,0]},
+ {x:"Become the person everyone wants to meet.",a:{lion:2,peacock:2,unicorn:1,flamingo:2},t:[2,0,1,0,4]},
+ {x:"Leave. Immediately.",a:{crow:2,tortoise:2,sloth:2},t:[0,1,0,2,0]}]},
+
+{f:"FACULTY",q:"Your genuine superpower.",o:[
+ {x:"Seeing where this all goes.",a:{eagle:2,unicorn:2,lion:1},t:[0,0,4,0,1]},
+ {x:"Actually finishing things.",a:{ant:3,beaver:2,cheetah:2},t:[0,4,0,1,0]},
+ {x:"People trust me quickly.",a:{bee:2,penguin:2,wolf:1},t:[4,0,0,0,1]},
+ {x:"I read the fine print nobody else reads.",a:{rhino:2,owl:2,fox:2},t:[0,1,0,4,0]},
+ {x:"I can talk anyone into anything.",a:{snake:2,chameleon:2,peacock:1,parrot:2},t:[3,0,1,0,3]},
+ {x:"I do not panic.",a:{duck:3,tortoise:2,penguin:3},t:[0,2,0,2,0]}]},
+
+{f:"DREAD",q:"What actually keeps you up at night?",o:[
+ {x:"Moving too slowly.",a:{cheetah:3,tiger:2,lion:1,monkey:1},t:[2,3,1,0,1]},
+ {x:"A circular landing tomorrow morning.",a:{rhino:3,elephant:1,duck:2},t:[0,1,0,4,0]},
+ {x:"Missing the next thing entirely.",a:{butterfly:2,shark:2,octopus:2,monkey:2,chameleon:1},t:[2,0,2,0,1]},
+ {x:"Runway.",a:{unicorn:2,lion:2,duck:1},t:[2,2,1,0,0]},
+ {x:"Building something nobody needs.",a:{crow:2,beaver:2,owl:2},t:[0,2,1,2,0]},
+ {x:"Nothing. I sleep beautifully.",a:{sloth:2,tortoise:2,whale:2},t:[0,0,0,0,0]}]},
+
+{f:"KIT",q:"One item in your pocket for day two.",o:[
+ {x:"Power bank. Non-negotiable.",a:{ant:2,duck:2,octopus:2},t:[1,3,0,1,0]},
+ {x:"Business cards. Paper ones.",a:{elephant:3,tortoise:2,wolf:1},t:[2,0,0,2,0]},
+ {x:"Phone, already open on LinkedIn.",a:{peacock:3,parrot:2,flamingo:1,chameleon:1},t:[2,0,0,0,4]},
+ {x:"Noise-cancelling earbuds.",a:{beaver:2,owl:2,crow:2},t:[0,3,0,1,0]},
+ {x:"An empty tote bag, ready.",a:{sloth:2,butterfly:1},t:[0,0,0,0,0]},
+ {x:"A deck, on standby, just in case.",a:{unicorn:2,lion:2,flamingo:1},t:[3,0,2,0,2]}]},
+
+{f:"TRUTH",q:"Brutal honesty. Why are you really here?",o:[
+ {x:"To change how finance works.",a:{lion:2,eagle:2,unicorn:2},t:[1,1,4,0,1]},
+ {x:"To make money.",a:{shark:2,whale:2,snake:2,tiger:1},t:[3,1,1,1,0]},
+ {x:"To meet people.",a:{bee:2,penguin:2,octopus:2,butterfly:2},t:[4,0,0,0,1]},
+ {x:"To learn.",a:{owl:2,tortoise:2,beaver:2},t:[0,2,1,2,0]},
+ {x:"To be seen.",a:{peacock:2,flamingo:2,parrot:2},t:[1,0,0,0,5]},
+ {x:"My boss made me come.",a:{sloth:2,ant:2,butterfly:1,duck:1},t:[0,1,0,1,0]}]}
+];
+
+/* trait baseline per species: [hustle, ship, vision, rigour, spotlight, buzzword%] */
+const TB = {
+ lion:[88,70,92,30,90,72], fox:[62,58,84,78,28,44], wolf:[97,62,50,32,66,68],
+ eagle:[74,52,94,46,74,88], elephant:[48,58,44,88,40,36], tiger:[86,84,64,34,70,79],
+ owl:[34,54,76,90,26,41], cheetah:[66,95,62,26,52,58], octopus:[94,66,70,36,84,91],
+ peacock:[80,44,52,22,98,86], parrot:[62,34,58,20,82,97], snake:[78,56,62,58,34,49],
+ bee:[95,50,58,40,60,83], beaver:[38,96,64,60,24,29], monkey:[60,72,80,18,66,54],
+ tortoise:[40,64,52,86,26,31], shark:[84,44,80,54,62,77], rhino:[42,62,44,99,34,52],
+ whale:[56,40,72,76,58,45], penguin:[70,74,44,58,38,47], chameleon:[76,58,66,52,70,84],
+ unicorn:[82,58,97,20,88,92], ant:[46,97,38,72,18,26], butterfly:[68,42,66,34,52,61],
+ sloth:[22,26,30,24,36,38], duck:[64,88,50,70,42,44], crow:[38,66,62,84,44,22],
+ flamingo:[72,70,68,36,90,74]
+};
+const TLAB=["Founder hustle","Ship velocity","Total addressable ambition","Regulatory instinct","Main-character energy"];
+const LOADTXT=["Cross-referencing the register…","Measuring your buzzword plumage…","Consulting the 2021 archive…","Checking your habitat…"];
+
+/* ---------- state ---------- */
+let idx=0, picks=[], userName="", me=null, meTraits=[], meBuzz=0;
+/* each species is normalised by the total signal available to it, so all 28
+   stay reachable and no species can dominate purely by appearing more often */
+const TOTW={};
+const $=s=>document.querySelector(s);
+const KEYS=Object.keys(ANIMALS);
+KEYS.forEach(k=>TOTW[k]=0);
+Q.forEach(q=>{const m={};q.o.forEach(o=>{for(const k in o.a)m[k]=Math.max(m[k]||0,o.a[k]);});for(const k in m)TOTW[k]+=m[k];});
+KEYS.forEach(k=>{if(!TOTW[k])TOTW[k]=1;});
+if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)document.body.classList.add("reduce");
+
+function show(id){
+  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("on"));
+  const el=$("#"+id); el.classList.add("on"); el.classList.remove("fade");
+  void el.offsetWidth; el.classList.add("fade"); window.scrollTo(0,0);
+}
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1600);}
+/* ---------- funnel tracking (GA4) ---------- */
+function track(name,params){ if(typeof gtag==="function") gtag("event",name,params||{}); }
+
+/* ---------- cover glyph shuffle ---------- */
+let cg=0;
+setInterval(()=>{
+  if(!$("#s-cover").classList.contains("on"))return;
+  cg=(cg+1)%KEYS.length; $("#cover-glyph").textContent=ANIMALS[KEYS[cg]].g;
+},850);
+$("#tally-n").textContent=(41208).toLocaleString("en-IN");
+
+/* ---------- quiz ---------- */
+function renderQ(){
+  const q=Q[idx];
+  track("question_view",{question_number:idx+1,question_field:q.f});
+  $("#q-count").textContent="QUESTION "+(idx+1)+" OF "+Q.length;
+  $("#q-field").textContent=q.f;
+  $("#q-text").textContent=q.q;
+  $("#qbar").innerHTML=Q.map((_,i)=>
+    '<div class="qslot '+(i<idx?"done":i===idx?"now":"")+'"></div>').join("");
+  $("#q-opts").innerHTML=q.o.map((o,i)=>
+    '<button class="opt'+(picks[idx]===i?" picked":"")+'" data-i="'+i+'"><i>'+
+    "ABCDEF"[i]+'</i><span>'+o.x+'</span></button>').join("");
+  $("#q-back").style.visibility=idx===0?"hidden":"visible";
+  document.querySelectorAll("#q-opts .opt").forEach(b=>b.onclick=()=>{
+    picks[idx]=+b.dataset.i;
+    document.querySelectorAll("#q-opts .opt").forEach(x=>x.classList.remove("picked"));
+    b.classList.add("picked");
+    setTimeout(()=>{ idx<Q.length-1 ? (idx++,renderQ()) : classify(); }, 230);
+  });
+}
+$("#q-back").onclick=()=>{ if(idx>0){idx--;renderQ();} };
+
+/* ---------- scoring ---------- */
+function classify(){
+  show("s-load");
+  const score={}, tr=[0,0,0,0,0];
+  KEYS.forEach(k=>score[k]=0);
+  picks.forEach((p,i)=>{
+    const o=Q[i].o[p]; if(!o)return;
+    for(const k in o.a) score[k]+=o.a[k];
+    o.t.forEach((v,j)=>tr[j]+=v);
+  });
+  let best=KEYS[0], bv=-1;
+  KEYS.forEach(k=>{
+    const v=score[k]/Math.pow(TOTW[k],0.7);
+    if(v>bv || (v===bv && ANIMALS[k].r<ANIMALS[best].r)){bv=v;best=k;}
+  });
+  me=best;
+  const maxT=[26,26,26,26,22];
+  meTraits=tr.map((v,j)=>{
+    const user=Math.min(99,Math.round(v/maxT[j]*100));
+    return Math.max(11,Math.min(99,Math.round(user*0.45+TB[me][j]*0.55)));
+  });
+  meBuzz=TB[me][5];
+  let n=0;
+  const iv=setInterval(()=>{
+    n++; $("#load-glyph").textContent=ANIMALS[KEYS[Math.floor(Math.random()*KEYS.length)]].g;
+    $("#load-txt").textContent=LOADTXT[n%LOADTXT.length];
+  },300);
+  setTimeout(()=>{clearInterval(iv);renderResult();},1750);
+}
+
+/* ---------- result ---------- */
+function renderResult(){
+  track("quiz_complete",{result_animal:me});
+  const a=ANIMALS[me], p=ANIMALS[a.pair], who=userName||"Someone";
+  const no=String(KEYS.indexOf(me)+1).padStart(2,"0");
+  $("#s-result").innerHTML=`
+  <div class="plate">
+   <div class="plate-in">
+    <div class="plate-top">
+      <div>
+        <div class="catno catno-ink">SPECIMEN ${no} / 28</div>
+        <div class="catno catno-ink" style="margin-top:3px">GFF 2026 · MUMBAI</div>
+      </div>
+      <div class="stamp"><b>${a.r}%</b><span>OF THE FLOOR</span></div>
+    </div>
+    <div class="glyph">${a.g}</div>
+    <h2 class="aname">The ${a.n}</h2>
+    <p class="alatin">${a.lat}</p>
+    <p class="atag">${a.tag}</p>
+
+    <div class="prule"></div>
+    <div class="nudge">
+      <p>This is more accurate than your last KYC video call. Prove it wrong.</p>
+      <button class="sbtn s-wa wide" data-sh="wa">Send it on WhatsApp</button>
+    </div>
+
+    <div class="prule"></div>
+    <p class="plabel">By the end of day three you will have collected</p>
+    <ul class="leave">${a.leave.map(l=>{
+      const m=l.match(/^(\d+)\s+([\s\S]+)$/);
+      return m?`<li><b>${m[1]}</b><span>${m[2]}</span></li>`:`<li><span>${l}</span></li>`;
+    }).join("")}</ul>
+
+    <div class="prule"></div>
+    <p class="plabel">Your GFF Macros</p>
+    ${meTraits.map((v,i)=>`<div class="stat">
+      <div class="stat-h"><span>${TLAB[i]}</span><b>${v}</b></div>
+      <div class="track"><div class="fill" data-w="${v}"></div></div></div>`).join("")}
+    <div class="stat">
+      <div class="stat-h"><span>Odds you say “ecosystem” out loud</span><b>${meBuzz}%</b></div>
+      <div class="track"><div class="fill hot" data-w="${meBuzz}"></div></div></div>
+
+    <div class="prule"></div>
+    <p class="plabel">You're most likely to be</p>
+    <p class="note">${a.hab}</p>
+    <div class="prule"></div>
+    <p class="plabel">Your weakness</p>
+    <p class="note">${a.weak}</p>
+
+    <div class="pair">
+      <div class="pg">${p.g}</div>
+      <p>You pair best with <b>the ${p.n}</b>. Everyone has one. Send this to yours.</p>
+    </div>
+
+    <div class="footmark">
+      <span>${(userName?userName.toUpperCase()+" · ":"")}FIELD GUIDE TO THE FINTECH ECOSYSTEM</span>
+      <span>№${no}</span>
+    </div>
+   </div>
+  </div>
+
+  <div class="sharewrap">
+    <h3 class="shead">Now go ruin someone's afternoon</h3>
+    <p class="ssub">This is what lands in the chat when you send it.</p>
+    <div class="preview">
+      <div class="preview-img">${a.g}</div>
+      <div class="preview-tx">
+        <b>${who} is the ${a.n}.</b>
+        <span>Only ${a.r}% of GFF gets this one. What animal are you?</span>
+        <div class="preview-url">GFFSPECIES.IN</div>
+      </div>
+    </div>
+    <div class="srow">
+      <button class="sbtn s-wa" data-sh="wa">WhatsApp</button>
+      <button class="sbtn s-li" data-sh="li">LinkedIn</button>
+    </div>
+    <div class="srow">
+      <button class="sbtn s-x" data-sh="x">Post on X</button>
+      <button class="sbtn s-cp" data-sh="cp">Copy caption</button>
+    </div>
+    <button class="linkish" id="r-gal">See all 28 species</button>
+    <button class="linkish" id="r-again">Take it again</button>
+    <div class="hair"></div>
+    <div class="catno">UNOFFICIAL · NOT AFFILIATED WITH GFF, PCI OR NPCI</div>
+  </div>`;
+  show("s-result");
+  requestAnimationFrame(()=>setTimeout(()=>{
+    document.querySelectorAll("#s-result .fill").forEach((f,i)=>
+      setTimeout(()=>f.style.width=f.dataset.w+"%", i*70));
+  },160));
+  const shareUrl=location.origin+location.pathname;
+  const waTxt=`I just got classified as the ${a.g} ${a.n} at #GFF2026. "${a.tag}" Uncomfortably accurate. What are you? ${shareUrl}`;
+  const xTxt=`I'm the ${a.g} ${a.n} at #GFF2026. Only ${a.r}% of the floor gets this one. What's yours?`;
+  const liTxt=`Humbled to be classified as the ${a.n} ${a.g} at Global Fintech Fest 2026 (only ${a.r}% of attendees get this one). Grateful for the insight. Find your species → ${shareUrl}`;
+  document.querySelectorAll("[data-sh]").forEach(b=>b.onclick=()=>{
+    track("share_click",{method:b.dataset.sh,result_animal:me});
+    const sh=b.dataset.sh;
+    if(sh==="cp"){
+      navigator.clipboard&&navigator.clipboard.writeText(waTxt);
+      toast("Copied");
+    }else if(sh==="wa"){
+      window.open("https://wa.me/?text="+encodeURIComponent(waTxt),"_blank","noopener,noreferrer");
+    }else if(sh==="li"){
+      navigator.clipboard&&navigator.clipboard.writeText(liTxt);
+      toast("Caption copied — paste it into your post");
+      window.open("https://www.linkedin.com/sharing/share-offsite/?url="+encodeURIComponent(shareUrl),"_blank","noopener,noreferrer");
+    }else if(sh==="x"){
+      window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(xTxt)+"&url="+encodeURIComponent(shareUrl),"_blank","noopener,noreferrer");
+    }
+  });
+  $("#r-gal").onclick=()=>{buildGal();show("s-gal");};
+  $("#r-again").onclick=()=>{idx=0;picks=[];renderQ();show("s-quiz");};
+}
+
+/* ---------- gallery ---------- */
+function buildGal(){
+  $("#gal-grid").innerHTML=KEYS.map(k=>{
+    const a=ANIMALS[k];
+    return `<button class="gcell${k===me?" me":""}" data-k="${k}"><span>${a.g}</span><small>${a.n}</small></button>`;
+  }).join("");
+  document.querySelectorAll(".gcell").forEach(c=>c.onclick=()=>{
+    const a=ANIMALS[c.dataset.k];
+    $("#gal-detail").innerHTML=`<h4>${a.g} The ${a.n}</h4><i>${a.lat} · ${a.r}% of the floor</i><p>${a.tag}</p>`;
+  });
+}
+
+/* ---------- wiring ---------- */
+$("#go-start").onclick=()=>show("s-name");
+$("#go-gal-1").onclick=()=>{buildGal();show("s-gal");};
+$("#gal-back").onclick=()=>show(me?"s-result":"s-cover");
+$("#skip-name").onclick=()=>{userName="";idx=0;picks=[];track("quiz_start",{name_provided:false});renderQ();show("s-quiz");};
+$("#go-q").onclick=()=>{userName=$("#name-in").value.trim();idx=0;picks=[];track("quiz_start",{name_provided:!!userName});renderQ();show("s-quiz");};
+$("#name-in").addEventListener("keydown",e=>{if(e.key==="Enter")$("#go-q").click();});
+renderQ();
+</script>
+</body>
+</html>
