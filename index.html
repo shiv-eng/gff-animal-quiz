@@ -687,14 +687,25 @@ Q.forEach(q=>{const m={};q.o.forEach(o=>{for(const k in o.a)m[k]=Math.max(m[k]||
 KEYS.forEach(k=>{if(!TOTW[k])TOTW[k]=1;});
 if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)document.body.classList.add("reduce");
 
+/* ---------- funnel tracking (GA4) ---------- */
+function track(name,params){ if(typeof gtag==="function") gtag("event",name,params||{}); }
+const SCREEN_TITLES={
+  "s-cover":()=>"Cover",
+  "s-name":()=>"Enter Name",
+  "s-quiz":()=>`Quiz — Question ${idx+1}`,
+  "s-load":()=>"Classifying",
+  "s-result":()=>`Result — ${ANIMALS[me]?ANIMALS[me].n:""}`,
+  "s-gal":()=>"Species Gallery"
+};
 function show(id){
   document.querySelectorAll(".screen").forEach(s=>s.classList.remove("on"));
   const el=$("#"+id); el.classList.add("on"); el.classList.remove("fade");
   void el.offsetWidth; el.classList.add("fade"); window.scrollTo(0,0);
+  if(id==="s-quiz")return; // renderQ() already fires page_view per question
+  const title=SCREEN_TITLES[id]?SCREEN_TITLES[id]():id;
+  track("page_view",{page_title:title,page_location:location.href});
 }
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1600);}
-/* ---------- funnel tracking (GA4) ---------- */
-function track(name,params){ if(typeof gtag==="function") gtag("event",name,params||{}); }
 
 /* ---------- cover glyph shuffle ---------- */
 let cg=0;
@@ -708,6 +719,7 @@ $("#tally-n").textContent=(41208).toLocaleString("en-IN");
 function renderQ(){
   const q=Q[idx];
   track("question_view",{question_number:idx+1,question_field:q.f});
+  track("page_view",{page_title:`Quiz — Question ${idx+1}`,page_location:location.href});
   $("#q-count").textContent="QUESTION "+(idx+1)+" OF "+Q.length;
   $("#q-field").textContent=q.f;
   $("#q-text").textContent=q.q;
